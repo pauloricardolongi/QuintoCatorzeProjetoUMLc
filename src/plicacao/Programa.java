@@ -20,7 +20,7 @@ public class Programa {
 		list.add(new Product("HD Case", 80.90));
 
         //remover da lista quem tiver o preço 100 ou mais
-		list.removeIf(new ProductPredicado());
+		list.removeIf(Product::staticProdPred);
 		for(Product p : list) {
 			System.out.println(p);
 		}

@@ -24,6 +24,12 @@ public class Product {
 
 	public void setPreco(Double preco) {
 		this.preco = preco;
+		
+		
+	}
+	
+	public static boolean staticProdPred (Product p) {
+		return p.getPreco() >= 100.0;
 	}
 
 	@Override
