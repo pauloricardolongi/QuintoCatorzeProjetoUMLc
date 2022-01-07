@@ -31,6 +31,12 @@ public class Product {
 	public static boolean staticProdPred (Product p) {
 		return p.getPreco() >= 100.0;
 	}
+	//trabalha sem argumento com o proprio  atributo do objeto onde estou
+	
+	public  boolean nonStaticProdPred () {
+		return preco >= 100.0;
+	}
+
 
 	@Override
 	public String toString() {
