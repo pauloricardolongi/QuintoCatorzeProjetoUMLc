@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import auxiliar.ProductPredicado;
 import entidades.Product;
 
 public class Programa {
@@ -19,7 +20,7 @@ public class Programa {
 		list.add(new Product("HD Case", 80.90));
 
         //remover da lista quem tiver o preço 100 ou mais
-		list.removeIf(p -> p.getPreco() >= 100);
+		list.removeIf(new ProductPredicado());
 		for(Product p : list) {
 			System.out.println(p);
 		}
